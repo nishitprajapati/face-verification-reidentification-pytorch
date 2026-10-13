@@ -1,0 +1,4 @@
+objective,rank1_accuracy,rank5_accuracy,probe_count,identity_count,gallery_images_per_identity,identity_score_aggregation
+cross_entropy,0.46,0.845,400,20,5,maximum gallery-image cosine similarity
+contrastive,0.3875,0.8275,400,20,5,maximum gallery-image cosine similarity
+triplet,0.475,0.855,400,20,5,maximum gallery-image cosine similarity

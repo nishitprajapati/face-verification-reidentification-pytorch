@@ -1,0 +1,4 @@
+objective,checkpoint_epoch,validation_roc_auc,validation_eer_estimate,validation_tar_at_far_1_percent,validation_selected_threshold_for_far_1_percent,test_roc_auc,test_eer_estimate,test_tar_at_far_1_percent,test_accuracy_at_validation_threshold,test_far_at_validation_threshold,test_frr_at_validation_threshold,test_tar_at_validation_threshold,test_pair_count
+cross_entropy,8,0.817357,0.261,0.142,0.757238507270813,0.836668,0.245,0.21,0.601,0.012,0.786,0.21399999999999997,2000
+contrastive,11,0.8011465,0.281,0.12,0.9760366082191467,0.8206439999999999,0.2615,0.156,0.566,0.009,0.859,0.14100000000000001,2000
+triplet,40,0.8117909999999999,0.268,0.132,0.9157130718231201,0.849555,0.22399999999999998,0.128,0.5895,0.017,0.804,0.19599999999999995,2000

@@ -1,0 +1,116 @@
+{
+  "dataset": "MorphFace subset: 100 identities x 25 images",
+  "seed": 42,
+  "validation_protocol": "Balanced fixed pairs from validation identities, disjoint from training.",
+  "test_protocol": "Balanced fixed pairs from test identities, disjoint from training and validation.",
+  "models": {
+    "cross_entropy": {
+      "checkpoint": "checkpoints\\resnet18_cross_entropy_best.pt",
+      "checkpoint_epoch": 8,
+      "validation": {
+        "roc_auc": 0.811831,
+        "eer_estimate": 0.277,
+        "tar_at_far_1_percent": 0.203,
+        "threshold": 0.7298187613487244,
+        "accuracy_at_threshold": 0.5965,
+        "far_at_threshold": 0.01,
+        "frr_at_threshold": 0.797,
+        "true_accept_rate_at_threshold": 0.203,
+        "tp": 203,
+        "fn": 797,
+        "fp": 10,
+        "tn": 990
+      },
+      "test": {
+        "roc_auc": 0.842432,
+        "eer_estimate": 0.2375,
+        "tar_at_far_1_percent": 0.148,
+        "threshold": 0.7298187613487244,
+        "accuracy_at_threshold": 0.6255,
+        "far_at_threshold": 0.022,
+        "frr_at_threshold": 0.727,
+        "true_accept_rate_at_threshold": 0.273,
+        "tp": 273,
+        "fn": 727,
+        "fp": 22,
+        "tn": 978
+      },
+      "threshold_selection": "Selected on validation pairs only: highest TAR at empirical FAR <= 1%.",
+      "validation_pair_count": 2000,
+      "test_pair_count": 2000,
+      "seed": 42
+    },
+    "contrastive": {
+      "checkpoint": "checkpoints\\resnet18_contrastive_best.pt",
+      "checkpoint_epoch": 11,
+      "validation": {
+        "roc_auc": 0.793797,
+        "eer_estimate": 0.29000000000000004,
+        "tar_at_far_1_percent": 0.085,
+        "threshold": 0.9779788255691528,
+        "accuracy_at_threshold": 0.5375,
+        "far_at_threshold": 0.01,
+        "frr_at_threshold": 0.915,
+        "true_accept_rate_at_threshold": 0.085,
+        "tp": 85,
+        "fn": 915,
+        "fp": 10,
+        "tn": 990
+      },
+      "test": {
+        "roc_auc": 0.832527,
+        "eer_estimate": 0.252,
+        "tar_at_far_1_percent": 0.154,
+        "threshold": 0.9779788255691528,
+        "accuracy_at_threshold": 0.559,
+        "far_at_threshold": 0.008,
+        "frr_at_threshold": 0.874,
+        "true_accept_rate_at_threshold": 0.126,
+        "tp": 126,
+        "fn": 874,
+        "fp": 8,
+        "tn": 992
+      },
+      "threshold_selection": "Selected on validation pairs only: highest TAR at empirical FAR <= 1%.",
+      "validation_pair_count": 2000,
+      "test_pair_count": 2000,
+      "seed": 42
+    },
+    "triplet": {
+      "checkpoint": "checkpoints\\resnet18_triplet_best.pt",
+      "checkpoint_epoch": 40,
+      "validation": {
+        "roc_auc": 0.8147010000000001,
+        "eer_estimate": 0.267,
+        "tar_at_far_1_percent": 0.096,
+        "threshold": 0.9275550246238708,
+        "accuracy_at_threshold": 0.543,
+        "far_at_threshold": 0.01,
+        "frr_at_threshold": 0.904,
+        "true_accept_rate_at_threshold": 0.096,
+        "tp": 96,
+        "fn": 904,
+        "fp": 10,
+        "tn": 990
+      },
+      "test": {
+        "roc_auc": 0.845378,
+        "eer_estimate": 0.23099999999999998,
+        "tar_at_far_1_percent": 0.111,
+        "threshold": 0.9275550246238708,
+        "accuracy_at_threshold": 0.573,
+        "far_at_threshold": 0.019,
+        "frr_at_threshold": 0.835,
+        "true_accept_rate_at_threshold": 0.165,
+        "tp": 165,
+        "fn": 835,
+        "fp": 19,
+        "tn": 981
+      },
+      "threshold_selection": "Selected on validation pairs only: highest TAR at empirical FAR <= 1%.",
+      "validation_pair_count": 2000,
+      "test_pair_count": 2000,
+      "seed": 42
+    }
+  }
+}
