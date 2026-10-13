@@ -1,4 +1,4 @@
-# Face Verification and Re-Identification — Technical Assessment
+# Face Verification and Re-Identification
 
 ## 1. Overview
 
